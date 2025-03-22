@@ -2,11 +2,12 @@ import { Link, Route, Routes } from 'react-router-dom';
 import { routes } from './routes';
 import Layout from '../layouts/Layout';
 import { lazy, Suspense } from 'react';
+import CircularPageLoading from '../ui/Loading/CircularPageLoading';
 const Home = lazy(() => import('../app/pages/home'));
 
 const AppRoutes = () => {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<CircularPageLoading />}>
       <Routes>
         <Route
           path={routes.base}
