@@ -1,12 +1,15 @@
 import { FC, ReactNode } from 'react';
 import { extendTheme, ThemeProvider } from '@mui/material/styles';
-import { MuiButtonOverRide, MuiCircularLoadingOverRide } from '../components';
+import {
+  MuiButtonOverRide,
+  MuiCircularLoadingOverRide,
+} from '@divar/components';
 import { CssBaseline } from '@mui/material';
 
 interface Props {
   children: ReactNode;
 }
-const Theme: FC<Props> = ({ children }) => {
+export const Theme: FC<Props> = ({ children }) => {
   const theme = extendTheme({
     colorSchemes: {
       dark: true,
@@ -23,5 +26,3 @@ const Theme: FC<Props> = ({ children }) => {
     </ThemeProvider>
   );
 };
-
-export default Theme;
