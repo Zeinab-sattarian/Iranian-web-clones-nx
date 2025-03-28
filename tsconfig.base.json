@@ -15,6 +15,15 @@
     "noUnusedLocals": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es2022"
+    "target": "es2022",
+    "baseUrl": ".",
+    "paths": {
+      "@divar/components": ["apps/divar/src/components"],
+      "@divar/layouts": ["apps/divar/src/layouts"],
+      "@divar/providers": ["apps/divar/src/providers"],
+      "@divar/routes": ["apps/divar/src/routes"],
+      "@divar/ui": ["apps/divar/src/ui"],
+      "@divar/assets": ["apps/divar/src/assets"]
+    }
   }
 }

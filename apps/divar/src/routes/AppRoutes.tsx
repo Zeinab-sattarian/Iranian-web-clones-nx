@@ -1,11 +1,11 @@
 import { Link, Route, Routes } from 'react-router-dom';
-import { routes } from './routes';
-import Layout from '../layouts/Layout';
+import { routes } from '@divar/routes';
+import { Layout } from '@divar/layouts';
 import { lazy, Suspense } from 'react';
-import CircularPageLoading from '../ui/Loading/CircularPageLoading';
+import { CircularPageLoading } from '@divar/ui';
 const Home = lazy(() => import('../app/pages/home'));
 
-const AppRoutes = () => {
+export const AppRoutes = () => {
   return (
     <Suspense fallback={<CircularPageLoading />}>
       <Routes>
@@ -25,5 +25,3 @@ const AppRoutes = () => {
     </Suspense>
   );
 };
-
-export default AppRoutes;

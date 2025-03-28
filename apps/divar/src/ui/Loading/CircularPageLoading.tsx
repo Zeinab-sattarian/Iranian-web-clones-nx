@@ -1,7 +1,7 @@
 import { Box, Stack } from '@mui/material';
-import CircularLoading from '../../components/Loading/CircularLoading';
+import { CircularLoading } from '@divar/components';
 
-const CircularPageLoading = () => {
+export const CircularPageLoading = () => {
   return (
     <Box
       sx={{
@@ -23,5 +23,3 @@ const CircularPageLoading = () => {
     </Box>
   );
 };
-
-export default CircularPageLoading;

@@ -4,8 +4,6 @@ interface Props extends CircularProgressProps {
   children?: ReactNode;
 }
 
-const CircularLoading: FC<Props> = ({ children, ...props }) => {
+export const CircularLoading: FC<Props> = ({ children, ...props }) => {
   return <CircularProgress {...props} />;
 };
-
-export default CircularLoading;
