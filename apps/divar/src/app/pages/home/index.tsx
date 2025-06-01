@@ -1,8 +1,7 @@
 import { Box, Grid, Stack, useColorScheme } from '@mui/material';
 
 import { useEffect } from 'react';
-import Adcard from './AdCard';
-import AdCard from './AdCard';
+import AdCard from './AdsDisplay';
 
 const Home = () => {
   const { setMode, mode } = useColorScheme();
